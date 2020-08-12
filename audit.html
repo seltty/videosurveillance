@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PIX</title>
+    <link rel="stylesheet" href="lib/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="lib/ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="lib/typicons.font/typicons.css" />
+    <link rel="stylesheet" href="lib/prismjs/themes/prism-vs.css" />
+    <link rel="stylesheet" href="lib/ion-rangeslider/css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="lib/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="lib/jqvmap/jqvmap.min.css" />
+
+
+   
+
+    <link rel="stylesheet" href="lib/datatables.net-dt/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" />
+
+   
+
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/dashforge.demo.css">
+
+
+   
+
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .ui-datepicker {
+            z-index: 99999 !important;
+        }
+    </style>
+    <style>
+        .modal-dialog-slideout {
+            min-height: 100%;
+            margin: 0 0 0 auto;
+            background: #fff;
+        }
+
+        .modal.fade .modal-dialog.modal-dialog-slideout {
+            -webkit-transform: translate(100%,0)scale(1);
+            transform: translate(100%,0)scale(1);
+        }
+
+        .modal.fade.show .modal-dialog.modal-dialog-slideout {
+            -webkit-transform: translate(0,0);
+            transform: translate(0,0);
+            display: flex;
+            align-items: stretch;
+            -webkit-box-align: stretch;
+            height: 100%;
+        }
+
+            .modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body {
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+
+        .modal-dialog-slideout .modal-content {
+            border: 0;
+        }
+
+        .modal-dialog-slideout .modal-header, .modal-dialog-slideout .modal-footer {
+            /*height: 69px;*/
+            display: flex;
+        }
+
+            .modal-dialog-slideout .modal-header h5 {
+                float: left;
+            }
+    </style>
+
+
+</head>
+<body>
+  
+    <header class="navbar navbar-header navbar-header-fixed main-header">
+        <a href="" id="sidebarMenuOpen" class="burger-menu"><i data-feather="arrow-left"></i></a>
+        <div class="navbar-brand main-nav">
+            <a href="" class="df-logo"><img src="Images/LOGO.png" style="width: 61px !important;" class="img pd-r-10" />Video<span>Surveillance</span> </a>
+        </div><!-- navbar-brand -->
+        <div id="navbarMenu" class="navbar-menu-wrapper">
+            <div class="navbar-menu-header">
+                <a href="" class="df-logo">Comp<span>Active</span></a>
+                <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+            </div><!-- navbar-menu-header -->
+            <ul class="nav navbar-menu">
+               
+            </ul>
+        </div><!-- nav-wrapper -->
+        <div class="navbar-right">
+            <a id="dfSettingsShow" href="" class="df-settings-link pr-3"><i data-feather="sidebar"></i></a>
+
+            <a href="">
+                <i data-feather="settings"></i>
+
+            </a>
+            <div class="dropdown dropdown-message">
+                <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+                    <i data-feather="message-square"></i>
+                    <span>5</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-header">New Messages</div>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="/https://via.placeholder.com/350" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <strong>Socrates Itumay</strong>
+                                <p>nam libero tempore cum so...</p>
+                                <span>Mar 15 12:32pm</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <strong>Joyce Chua</strong>
+                                <p>on the other hand we denounce...</p>
+                                <span>Mar 13 04:16am</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="/https://via.placeholder.com/600" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <strong>Althea Cabardo</strong>
+                                <p>is there anyone who loves...</p>
+                                <span>Mar 13 02:56am</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <strong>Adrian Monino</strong>
+                                <p>duis aute irure dolor in repre...</p>
+                                <span>Mar 12 10:40pm</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <div class="dropdown-footer"><a href="">View all Messages</a></div>
+                </div>
+                <!-- dropdown-menu -->
+            </div>
+            <!-- dropdown -->
+            <div class="dropdown dropdown-notification">
+                <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+                    <i data-feather="bell"></i>
+                    <span>2</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-header">Notifications</div>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="../https://via.placeholder.com/350" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <p>Congratulate <strong>Socrates Itumay</strong> for work anniversaries</p>
+                                <span>Mar 15 12:32pm</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <p><strong>Joyce Chua</strong> just created a new blog post</p>
+                                <span>Mar 13 04:16am</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="../https://via.placeholder.com/600" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <p><strong>Althea Cabardo</strong> just created a new blog post</p>
+                                <span>Mar 13 02:56am</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <p><strong>Adrian Monino</strong> added new comment on your photo</p>
+                                <span>Mar 12 10:40pm</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <div class="dropdown-footer"><a href="">View all Notifications</a></div>
+                </div>
+                <!-- dropdown-menu -->
+            </div>
+            <!-- dropdown -->
+            <div class="dropdown dropdown-profile">
+                <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                    <div class="avatar avatar-sm"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                </a><!-- dropdown-link -->
+                <div class="dropdown-menu dropdown-menu-right tx-13">
+                    <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                    <h6 class="tx-semibold mg-b-5">Client Admin</h6>
+                    <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+                    <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
+                    <a href="" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+                </div><!-- dropdown-menu -->
+                <!-- dropdown-menu -->
+            </div>
+            <!-- dropdown -->
+        </div><!-- az-header-right -->
+    </header><!-- navbar -->
+
+    <div id="sidebarMenu" class="sidebar sidebar-fixed sidebar-components">
+        <div class="sidebar-header">
+            <a href="" id="mainMenuOpen"><i data-feather="menu"></i></a>
+            <h5>Settings</h5>
+            <a href="" id="sidebarMenuClose"><i data-feather="x"></i></a>
+        </div><!-- sidebar-header -->
+        <div class="sidebar-body sidebar-section">
+            <ul class="sidebar-nav sidebar-menu">
+                <li class="nav-label mg-b-15 learn-development">Settings & Features</li>
+                <li class="nav-item"><a href="audit.html" class="nav-link"><i data-feather="box"></i>Audit & Trail</a></li>
+                <li class="nav-item"><a href="audit.html" class="nav-link"><i data-feather="layout"></i>Management</a></li>
+                <li class="nav-item"><a href="user.html" class="nav-link"><i data-feather="users"></i>User</a></li>
+                <li class="nav-item"><a href="Premise.html" class="nav-link"><i data-feather="file-text"></i>Premise</a></li>
+                <li class="nav-item"><a href="camera.html" class="nav-link"><i data-feather="message-square"></i>Camera</a></li>
+
+
+
+            </ul>
+        </div><!-- sidebar-body -->
+    </div><!-- sidebar -->
+
+    <div class="content content-components" id="content" style="margin-right:0px !important;">
+
+<!--           PremiseScreen--------------------                            -->
+
+<div class="">
+    <div class="d-flex align-items-center breadcrumb-section">
+        <div class="content-area__heading pr-2"><h2>Settings</h2></div>
+        <nav class="col-md-5 d-flex align-items-center" aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-style1 mg-b-5">
+                <li class="breadcrumb-item d-flex align-items-center active" aria-current="page"><a href=""> <i data-feather="home" width="20"></i></a></li>
+                <li class="breadcrumb-item d-flex align-items-center active" aria-current="page"><a href=""><i data-feather="settings" width="20"></i></a></li>
+                <li class="breadcrumb-item d-flex align-items-center" aria-current="page">Roles</li>
+            </ol>
+        </nav>
+        <div class="d-none d-md-block col-md-6 text-right">
+            <a href="#" class="btn btn-dark rounded-pill" onclick="openpopup(); return false;" data-animation="effect-slide-in-right">
+                <i data-feather="plus" width="20"></i> Add Role
+            </a>
+        </div>
+    </div>
+    <div class="df-example demo-table">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4" style="margin-bottom:-45px;">
+                
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <table id="example2" class="table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Premises</th>
+                    <th>Camera</th>
+                    <th>User Id</th>
+                    <th>Status</th>
+                    <th>Alert</th>
+                    <th class="text-center">Edit / Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+             
+                    <tr>
+                        <td>
+                           Trainer
+                        </td>
+
+                       
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td class="text-center"><a class="btn btn-dark" onclick="CompcountShowpopup('1'); return false;">1</a></td>
+                        <td class="text-center">
+                            <a href="#">
+                                <span data-feather="edit" width="20" onclick="EditRolepopup('1'); return false;"></span>
+                            </a>
+                        
+                                <a href="#" onclick="deleteRole('1','Trainer')">
+                                    <span data-feather="trash" width="20"></span>
+                                </a>
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Trainer
+                        </td>
+
+                       
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td class="text-center"><a class="btn btn-dark" onclick="CompcountShowpopup('1'); return false;">1</a></td>
+                        <td class="text-center">
+                            <a href="#">
+                                <span data-feather="edit" width="20" onclick="EditRolepopup('1'); return false;"></span>
+                            </a>
+                        
+                                <a href="#" onclick="deleteRole('1','Trainer')">
+                                    <span data-feather="trash" width="20"></span>
+                                </a>
+
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Trainer
+                        </td>
+
+                       
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td> 12</td>
+                        <td class="text-center"><a class="btn btn-dark" onclick="CompcountShowpopup('1'); return false;">1</a></td>
+                        <td class="text-center">
+                            <a href="#">
+                                <span data-feather="edit" width="20" onclick="EditRolepopup('1'); return false;"></span>
+                            </a>
+                        
+                                <a href="#" onclick="deleteRole('1','Trainer')">
+                                    <span data-feather="trash" width="20"></span>
+                                </a>
+
+                            
+                        </td>
+                    </tr>
+              
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<!-- Add JobRole Modal -->
+<div class="modal fade" id="AddJobRoleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
+        <div class="modal-content tx-14">
+
+            <div class="modal-header">
+                <h6 class="modal-title" id="exampleModalLabel6">Create Role</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="formAddRole" data-parsley-validate>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="d-block">
+                            Role Title<span class="tx-danger">*</span>
+                        </label>
+                        <input type="text" name="DName" id="txtRoleName" autocomplete="off" class="form-control" placeholder="Enter Role Title" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="d-block">Description</label>
+                        <textarea name="Desc" id="txtRoledesc" autocomplete="off" class="form-control" rows="3" placeholder="Enter Description" ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="d-block">
+                            Role ID<span class="tx-danger">*</span>
+                        </label>
+                        <input type="text" name="DName" id="txtRole" autocomplete="off" class="form-control" placeholder="Enter Role ID" required />
+                    </div>
+
+                 
+
+
+
+
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-md-12 text-left">
+                        <button type="button" class="btn btn-secondary rounded-pill" data-dismiss="modal">Close</button>
+                        <button type="submit" id="btnSubmit" class="btn btn-primary rounded-pill" onclick=" Dosubmit(); return false;">Save</button>
+                        <button type="submit" id="btnSubmitUpdate" class="btn btn-primary rounded-pill" onclick=" Dosubmit_Submit(); return false;" style="display:none;">Update</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<div id="new_div_Training" style="display:none;">
+    <table class="table table-bordered table-hover" id="table_Virtual_Competencylevel">
+
+        <tr id="row1">
+            <td>
+                <select class="form-control clscompcat" style="width:100%;" onchange="compcat(this); return false;" name="Compcat[]" required>
+                    <option value="0" selected>- Select Competency -</option>
+                    <option value="1">Category1</option>
+                    <option value="1">Category1</option>
+                </select>
+
+            </td>
+            <td>
+                <select class="form-control clscompetency" style="width:100%;" onchange="compdetail(this); return false;" name="Competency[]" required>
+                    <option value="0" selected>- Select Competency -</option>
+                  
+
+                </select>
+
+            </td>
+            <td>
+                <select class="form-control clslevels" name="LevelId[]" style="width:100%;" onchange="compdetail(this); return false;" required>
+                    <option value="0" selected>- Select Level -</option>
+                    <option value="1">Category1</option>
+                    <option value="1">Category1</option>
+
+                </select>
+            </td>
+            <td>
+                <img src="~/Images/alert-circle.svg" title="Has a good understanding of the service to be provided. Responsive and helpful to customers; always puts the customers’ needs first .Provides timely service " />
+
+            </td>
+            <td>
+                <button class="btn btn-sm btn-danger" type="button" value="" onclick="removerow(this); return false;"> <i data-feather="x"></i> </button>
+            </td>
+        </tr>
+        <tr id="row2"></tr>
+    </table>
+</div>
+
+<div class="modal fade show empty-calendar" id="RoleCompListModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5">
+    <div class="modal-dialog modal-dialog-centered" style="width:680px; max-width:100%;">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="JobroleTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i data-feather="x"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <table id="tblShowRoleComp" class="table table-dark table-hover table-striped mg-b-0">
+                            <thead>
+                                <tr>
+                                    <th>Competency</th>
+                                    <th>Level</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal-footer">
+
+              
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--                ----------------------       -->
+
+
+
+
+
+    </div>
+    <div class="modal" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content tx-14">
+                <form id="formDeleteModal" data-parsley-validate>
+                    <div class="modal-header">
+
+                        <h6 class="modal-title" id="lblDeleteTitle"></h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mg-b-0" id="lblDeleteMsg">
+                            Confirmation? <br /><small>
+                                Do you really want to delete these records? This process cannot be undone.
+                            </small>
+                        </p>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="d-block">Reason Message</label>
+                            <textarea id="ReasonMsg" name="ReasonMsg" autocomplete="off" class="form-control" placeholder="Enter Delete Reason" required></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="dno" class="btn btn-secondary tx-13" data-dismiss="modal">Close</button>
+                        <button type="button" id="dyes" class="btn btn-danger tx-13">Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="divSpinner" style="display:none; background-color:white;border:1px solid black; width:110px;height:130px;position:absolute;top:50%;left:50%;padding:5px; z-index: 1450 !important;">
+        <img src='Images/spinner_wait.gif' width="100" height="100" />
+        <br>
+        <span class="text-center" style="padding:5px;">Loading...</span>
+    </div>
+
+    
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/feather-icons/feather.min.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/prismjs/prism.js"></script>
+    <script src="lib/select2/js/select2.min.js"></script>
+    <script src="lib/parsleyjs/parsley.min.js"></script>
+
+
+    <script src="lib/jqueryui/jquery-ui.min.js"></script>
+   
+    <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+
+
+    
+    <script src="assets/js/dashforge.js"></script>
+
+
+    <script src="lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="lib/moment/min/moment.min.js"></script>
+    <script src="lib/fullcalendar/fullcalendar.min.js"></script>
+    <script src="lib/select2/js/select2.full.min.js"></script>
+    <script src="assets/js/calendar-events.js"></script>
+    <script src="assets/js/dashforge.calendar.js"></script>
+
+   
+
+
+    <script src="lib/js-cookie/js.cookie.js"></script>
+    <script src="assets/js/dashforge.settings.js"></script>
+
+   
+<script src="Scripts/RoleMaster.js"></script>
+   
+<script type="text/javascript">
+    // Adding placeholder for search input
+    (function ($) {
+
+        'use strict'
+        $("#content").load("dashboardscreen.html"); 
+        var Defaults = $.fn.select2.amd.require('select2/defaults');
+
+        $.extend(Defaults.defaults, {
+            searchInputPlaceholder: ''
+        });
+
+        var SearchDropdown = $.fn.select2.amd.require('select2/dropdown/search');
+
+        var _renderSearchDropdown = SearchDropdown.prototype.render;
+
+        SearchDropdown.prototype.render = function (decorated) {
+
+            // invoke parent method
+            var $rendered = _renderSearchDropdown.apply(this, Array.prototype.slice.apply(arguments));
+
+            this.$search.attr('placeholder', this.options.get('searchInputPlaceholder'));
+
+            return $rendered;
+        };
+
+    })(window.jQuery);
+
+    $(function () {
+        'use strict'
+        $('#example2').DataTable({
+            responsive: false,
+            language: {
+                searchPlaceholder: 'Search...',
+                sSearch: '',
+                lengthMenu: '_MENU_ ',
+            }
+        });
+
+         $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+        // Basic with search
+        $('.select2').select2({
+
+            dropdownParent: $('#AddJobRoleModal'),
+            placeholder: 'Choose one',
+            searchInputPlaceholder: 'Search options'
+        });
+        $('.dataTables_length select').select2({ minimumResultsForSearch: Infinity });
+    });
+
+
+</script>
+
+
+</body>
+</html>
+

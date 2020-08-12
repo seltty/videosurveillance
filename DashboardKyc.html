@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PIX</title>
+    <link rel="stylesheet" href="lib/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="lib/ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="lib/typicons.font/typicons.css" />
+    <link rel="stylesheet" href="lib/prismjs/themes/prism-vs.css" />
+    <link rel="stylesheet" href="lib/ion-rangeslider/css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="lib/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="lib/jqvmap/jqvmap.min.css" />
+
+
+   
+
+    <link rel="stylesheet" href="lib/datatables.net-dt/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="lib/datatables.net-responsive-dt/css/responsive.dataTables.min.css" />
+
+   
+
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/dashforge.demo.css">
+
+
+   
+
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .ui-datepicker {
+            z-index: 99999 !important;
+        }
+    </style>
+    <style>
+        .modal-dialog-slideout {
+            min-height: 100%;
+            margin: 0 0 0 auto;
+            background: #fff;
+        }
+
+        .modal.fade .modal-dialog.modal-dialog-slideout {
+            -webkit-transform: translate(100%,0)scale(1);
+            transform: translate(100%,0)scale(1);
+        }
+
+        .modal.fade.show .modal-dialog.modal-dialog-slideout {
+            -webkit-transform: translate(0,0);
+            transform: translate(0,0);
+            display: flex;
+            align-items: stretch;
+            -webkit-box-align: stretch;
+            height: 100%;
+        }
+
+            .modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body {
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+
+        .modal-dialog-slideout .modal-content {
+            border: 0;
+        }
+
+        .modal-dialog-slideout .modal-header, .modal-dialog-slideout .modal-footer {
+            /*height: 69px;*/
+            display: flex;
+        }
+
+            .modal-dialog-slideout .modal-header h5 {
+                float: left;
+            }
+    </style>
+
+
+</head>
+<body>
+  
+    <header class="navbar navbar-header navbar-header-fixed main-header">
+        <a href="" id="sidebarMenuOpen" class="burger-menu"><i data-feather="arrow-left"></i></a>
+        <div class="navbar-brand main-nav">
+            <a href="" class="df-logo"><img src="Images/LOGO.png" style="width: 61px !important;" class="img pd-r-10" />Video<span>Surveillance</span> </a>
+        </div><!-- navbar-brand -->
+        <div id="navbarMenu" class="navbar-menu-wrapper">
+            <div class="navbar-menu-header">
+                <a href="" class="df-logo">Comp<span>Active</span></a>
+                <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+            </div><!-- navbar-menu-header -->
+            <ul class="nav navbar-menu">
+                <li class="nav-label pd-l-20 pd-lg-l-25 d-lg-none">Main Navigation</li>
+                <li class="nav-item ">
+                    <a href="" class="nav-link"><i data-feather="pie-chart"></i> Training & Development</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i data-feather="package"></i> Skill Development</a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link"><i data-feather="layers"></i>  Personalized Learning</a>
+
+                </li>
+                <li class="nav-item"><a href="" class="nav-link"><i data-feather="archive"></i> Reports</a></li>
+            </ul>
+        </div><!-- nav-wrapper -->
+        <div class="navbar-right">
+            <a id="dfSettingsShow" href="" class="df-settings-link pr-3"><i data-feather="sidebar"></i></a>
+
+            <a href="">
+                <i data-feather="settings"></i>
+
+            </a>
+            <div class="dropdown dropdown-message">
+                <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+                    <i data-feather="message-square"></i>
+                    <span>5</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-header">New Messages</div>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="/https://via.placeholder.com/350" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <strong>Socrates Itumay</strong>
+                                <p>nam libero tempore cum so...</p>
+                                <span>Mar 15 12:32pm</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <strong>Joyce Chua</strong>
+                                <p>on the other hand we denounce...</p>
+                                <span>Mar 13 04:16am</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="/https://via.placeholder.com/600" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <strong>Althea Cabardo</strong>
+                                <p>is there anyone who loves...</p>
+                                <span>Mar 13 02:56am</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <strong>Adrian Monino</strong>
+                                <p>duis aute irure dolor in repre...</p>
+                                <span>Mar 12 10:40pm</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <div class="dropdown-footer"><a href="">View all Messages</a></div>
+                </div>
+                <!-- dropdown-menu -->
+            </div>
+            <!-- dropdown -->
+            <div class="dropdown dropdown-notification">
+                <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
+                    <i data-feather="bell"></i>
+                    <span>2</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-header">Notifications</div>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="../https://via.placeholder.com/350" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <p>Congratulate <strong>Socrates Itumay</strong> for work anniversaries</p>
+                                <span>Mar 15 12:32pm</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <p><strong>Joyce Chua</strong> just created a new blog post</p>
+                                <span>Mar 13 04:16am</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="../https://via.placeholder.com/600" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <p><strong>Althea Cabardo</strong> just created a new blog post</p>
+                                <span>Mar 13 02:56am</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <a href="" class="dropdown-item">
+                        <div class="media">
+                            <div class="avatar avatar-sm avatar-online">
+                                <img src="https://via.placeholder.com/500" class="rounded-circle" alt="">
+                            </div>
+                            <div class="media-body mg-l-15">
+                                <p><strong>Adrian Monino</strong> added new comment on your photo</p>
+                                <span>Mar 12 10:40pm</span>
+                            </div>
+                            <!-- media-body -->
+                        </div>
+                        <!-- media -->
+                    </a>
+                    <div class="dropdown-footer"><a href="">View all Notifications</a></div>
+                </div>
+                <!-- dropdown-menu -->
+            </div>
+            <!-- dropdown -->
+            <div class="dropdown dropdown-profile">
+                <a href="" class="dropdown-link" data-toggle="dropdown" data-display="static">
+                    <div class="avatar avatar-sm"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                </a><!-- dropdown-link -->
+                <div class="dropdown-menu dropdown-menu-right tx-13">
+                    <div class="avatar avatar-lg mg-b-15"><img src="https://via.placeholder.com/500" class="rounded-circle" alt=""></div>
+                    <h6 class="tx-semibold mg-b-5">Client Admin</h6>
+                    <p class="mg-b-25 tx-12 tx-color-03">Administrator</p>
+                    <a href="" class="dropdown-item"><i data-feather="edit-3"></i> Edit Profile</a>
+                    <a href="" class="dropdown-item"><i data-feather="user"></i> View Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
+                </div><!-- dropdown-menu -->
+                <!-- dropdown-menu -->
+            </div>
+            <!-- dropdown -->
+        </div><!-- az-header-right -->
+    </header><!-- navbar -->
+
+    <div id="sidebarMenu" class="sidebar sidebar-fixed sidebar-components">
+        <div class="sidebar-header">
+            <a href="" id="mainMenuOpen"><i data-feather="menu"></i></a>
+            <h5>Settings</h5>
+            <a href="" id="sidebarMenuClose"><i data-feather="x"></i></a>
+        </div><!-- sidebar-header -->
+        <div class="sidebar-body sidebar-section">
+            <ul class="sidebar-nav sidebar-menu">
+                <li class="nav-label mg-b-15 learn-development">Settings & Features</li>
+                <li class="nav-item"><a href="audit.html" class="nav-link"><i data-feather="box"></i>Audit & Trail</a></li>
+                <li class="nav-item"><a href="audit.html" class="nav-link"><i data-feather="layout"></i>Management</a></li>
+                <li class="nav-item"><a href="user.html" class="nav-link"><i data-feather="users"></i>User</a></li>
+                <li class="nav-item"><a href="Premise.html" class="nav-link"><i data-feather="file-text"></i>Premise</a></li>
+                <li class="nav-item"><a href="camera.html" class="nav-link"><i data-feather="message-square"></i>Camera</a></li>
+
+
+            </ul>
+        </div><!-- sidebar-body -->
+    </div><!-- sidebar -->
+
+    <div class="content content-components" id="content" style="margin-right:0px !important;">
+
+<!--           dashboardScreen--------------------                            -->
+
+<div class="">
+
+    <div class="d-flex align-items-center breadcrumb-section">
+        <div class="content-area__heading pr-2"><h2>Settings</h2></div>
+        <nav class="col-md-5 d-flex align-items-center" aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-style1 mg-b-5">
+                <li class="breadcrumb-item active d-flex align-items-center active" aria-current="page"><a href=""> <i data-feather="home" width="20"></i></a></li>
+                <li class="breadcrumb-item d-flex align-items-center" aria-current="page"></li>
+            </ol>
+        </nav>
+        <div class="d-none d-md-block">
+        </div>
+    </div>
+    <div class="row setting-section pt-3">
+
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="">
+                    <div class="card-header"><span class="svg-icon"><i data-feather="layout" class="tx-blue tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="card-text">Organization</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="">
+                    <div class="card-header"><span class="svg-icon svg-icon-depart"><i data-feather="file-text" class="tx-depart tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="depart-text card-text">Functions</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="">
+                    <div class="card-header"><span class="svg-icon svg-icon-unit"><i data-feather="calendar" class="tx-unit tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="unit-text card-text">Roles</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="">
+                    <div class="card-header"><span class="svg-icon svg-icon-section"><i data-feather="file-text" class="tx-section tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="sections-text card-text">Employees</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="">
+                    <div class="card-header"><span class="svg-icon"><i data-feather="check-circle" class="tx-blue tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="card-text">Languages</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="">
+                    <div class="card-header"><span class="svg-icon"><i data-feather="check-circle" class="tx-blue tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="card-text">Question Bank</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="">
+                    <div class="card-header"><span class="svg-icon svg-icon-depart"><i data-feather="file-text" class="tx-depart tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="depart-text card-text">Competency Library</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="#">
+                    <div class="card-header"><span class="svg-icon svg-icon-section"><i data-feather="file-text" class="tx-section tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="sections-text card-text">Training Library</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="javascript:void(0)">
+                    <div class="card-header"><span class="svg-icon"><i data-feather="file-text" class="tx-blue tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="card-text">Certificates</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="javascript:void(0)">
+                    <div class="card-header"><span class="svg-icon svg-icon-unit"><i data-feather="mail" class="tx-unit tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="unit-text card-text">Email Template</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="javascript:void(0)">
+                    <div class="card-header"><span class="svg-icon svg-icon-unit"><i data-feather="mail" class="tx-unit tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="unit-text card-text">Competency Levels</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="card tx-white">
+                <a href="javascript:void(0)" onclick="loadDesignations()">
+                    <div class="card-header"><span class="svg-icon svg-icon-unit"><i data-feather="mail" class="tx-unit tx-width"></i></span></div>
+                    <div class="card-body">
+                        <h5 class="unit-text card-text">Designation</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--                ----------------------       -->
+
+
+
+
+
+    </div>
+    <div class="modal" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content tx-14">
+                <form id="formDeleteModal" data-parsley-validate>
+                    <div class="modal-header">
+
+                        <h6 class="modal-title" id="lblDeleteTitle"></h6>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mg-b-0" id="lblDeleteMsg">
+                            Confirmation? <br /><small>
+                                Do you really want to delete these records? This process cannot be undone.
+                            </small>
+                        </p>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput" class="d-block">Reason Message</label>
+                            <textarea id="ReasonMsg" name="ReasonMsg" autocomplete="off" class="form-control" placeholder="Enter Delete Reason" required></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="dno" class="btn btn-secondary tx-13" data-dismiss="modal">Close</button>
+                        <button type="button" id="dyes" class="btn btn-danger tx-13">Delete</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="divSpinner" style="display:none; background-color:white;border:1px solid black; width:110px;height:130px;position:absolute;top:50%;left:50%;padding:5px; z-index: 1450 !important;">
+        <img src='Images/spinner_wait.gif' width="100" height="100" />
+        <br>
+        <span class="text-center" style="padding:5px;">Loading...</span>
+    </div>
+
+    
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/feather-icons/feather.min.js"></script>
+    <script src="lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="lib/prismjs/prism.js"></script>
+    <script src="lib/select2/js/select2.min.js"></script>
+    <script src="lib/parsleyjs/parsley.min.min.js"></script>
+
+
+    <script src="lib/jqueryui/jquery-ui.min.js"></script>
+   
+    <script src="lib/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="lib/datatables.net-dt/js/dataTables.dataTables.min.js"></script>
+    <script src="lib/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="lib/datatables.net-responsive-dt/js/responsive.dataTables.min.js"></script>
+
+
+    
+    <script src="assets/js/dashforge.js"></script>
+
+
+    <script src="lib/jqueryui/jquery-ui.min.js"></script>
+    <script src="lib/moment/min/moment.min.js"></script>
+    <script src="lib/fullcalendar/fullcalendar.min.js"></script>
+    <script src="lib/select2/js/select2.full.min.js"></script>
+    <script src="assets/js/calendar-events.js"></script>
+    <script src="assets/js/dashforge.calendar.js"></script>
+
+   
+
+
+    <script src="lib/js-cookie/js.cookie.js"></script>
+    <script src="assets/js/dashforge.settings.js"></script>
+
+    <script>
+        $(function(){
+            
+      $("#content").load("dashboardscreen.html"); 
+    });
+       /*  $.ajaxSetup({
+            beforeSend: function () {
+                // show gif here, eg:
+                $("#divSpinner").show();
+            },
+            complete: function () {
+                // hide gif here, eg:
+                $("#divSpinner").hide();
+            }
+        }); */
+    </script>
+
+
+</body>
+</html>
+
