@@ -1,0 +1,425 @@
+
+@font-face {
+    font-family: 'proxima_novabold';
+    src: url('../fonts/proxima-nova/proxima_nova_bold-webfont.eot');
+    src: url('../fonts/proxima-nova/proxima_nova_bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima-nova/proxima_nova_bold-webfont.woff2') format('woff2'), url('../fonts/proxima-nova/proxima_nova_bold-webfont.woff') format('woff'), url('../fonts/proxima-nova/proxima_nova_bold-webfont.ttf') format('truetype'), url('../fonts/proxima-nova/proxima_nova_bold-webfont.svg#proxima_novabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../fonts/proxima-nova/proximanova-regular-webfont.eot');
+    src: url('../fonts/proxima-nova/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/proxima-nova/proximanova-regular-webfont.woff2') format('woff2'), url('../fonts/proxima-nova/proximanova-regular-webfont.woff') format('woff'), url('../fonts/proxima-nova/proximanova-regular-webfont.ttf') format('truetype'), url('../fonts/proxima-nova/proximanova-regular-webfont.svg#proxima_novaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.sidebar-section ul li a {
+    padding: 8px 10px !important;
+}
+.sidebar-section ul li:hover a {
+    -webkit-transform: translateX(5px);
+     transform: translateX(5px);
+    -webkit-transition: -webkit-transform .25s ease;
+}
+.sidebar-section .learn-development, .sidebar-section .skill-development, .sidebar-section .personal-learning {
+    /*font-size: 13px;
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #0000B0;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;*/
+    font-size: 13px;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0C455E;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0;
+}
+.sidebar-section ul li a {
+    color: #565656 !important;
+}
+.main-header .df-logo {
+    /*color: #0201B0;*/
+    font-size: 22px !important;
+    font-weight: 600;
+    color:#fff;
+}
+.main-header .main-nav {
+    width: auto;
+    max-width: 100%;
+    padding: 0 10px;
+}
+.main-header .main-nav img {
+    max-width: 100%;
+    height: auto;
+    width:90px;
+}
+.sidebar-section {
+    padding: 0 15px;
+}
+.counter-section .card-counter .card-content h3 {
+    font-weight: 600;
+    color: #1e9ff2;
+}
+.counter-section .card-counter .card-content h6 {
+    color: #626262;
+}
+.counter-section .card-counter .card-body .fa-book {
+    color: #1e9ff2;
+}
+.card-section {
+    padding: 15px;
+    box-shadow: 0 2px 18px 1px rgba(49,53,72,.1);
+}
+.card-section h4 {
+    font-size: 13px;
+}
+.card-section p {
+    font-size: 13px;
+    font-weight: 500;
+}
+.training-section {
+    box-shadow: 0 2px 18px 1px rgba(49,53,72,.1);
+    -webkit-box-shadow: 0 2px 18px 1px rgba(49,53,72,.1);
+}
+.training-section .card-header h6, .card-section .card-header h6 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #2c2c2c;
+}
+.training-section .card-header svg, .card-section .card-header svg {
+    margin-right: 5px;
+    line-height: 1.2;
+ }
+.training-section .card-header, .card-section .card-header{
+    border-bottom:0;
+}
+.crypto-icon {
+    margin-top: 8px;
+}
+
+.modal .form-group label {
+    font-size: 13px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #0C455E;
+}
+.breadcrumb-section .content-area__heading {
+    border-right: 1px solid #dae1e7;
+    color: #636363;
+    margin-top: 0;
+}
+
+    .breadcrumb-section .content-area__heading h2 {
+        font-size: 18px;
+        color: #636363;
+        font-weight: 500;
+        line-height: 20px;
+        display: inline;
+    }
+
+.breadcrumb-section {
+    margin-bottom: 15px;
+    margin-left:5px; 
+}
+    .breadcrumb-section .breadcrumb li.active a {
+        /*color: #0000B0;*/
+        color: #0C455E;
+    }
+    .breadcrumb-section .btn {
+        background: transparent;
+        color: #0C455E;
+        border-radius: 5px !important;
+        border-color: #0C455E;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-weight: 500
+    }
+
+        .breadcrumb-section .btn:hover {
+            background: #EEEDF8;
+        }
+.demo-table .table th {
+    color: #626262;
+    font-weight: 600;
+    font-size:13px;
+}
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 0px 15px;
+    line-height: 45px;
+    font-size: 13px;
+    color: #626262;
+}
+.dataTables_wrapper .dataTables_info{
+    display:none;
+}
+table.dataTable thead th:hover, table.dataTable thead td:hover {
+    background: #f2f2f2;
+}
+table.dataTable tbody tr.even {
+    background: #EEE;
+}
+table.dataTable tbody tr:hover {
+    background: #FAFAFA;
+}
+.select2-container--default .select2-selection--single{
+    border:1px solid #e2e2e2;
+}
+.organization-info .card{
+    border:0;
+}
+    .organization-info .card table td {
+        min-width: 175px;
+        word-break: break-all;
+        padding-bottom: .8rem;
+        font-weight: 400;
+    }
+
+    .organization-info .card table .font-semibold {
+        font-weight: 600;
+    }
+.units-section .card-header {
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.units-section .card-body {
+    padding: 5px;
+    text-align: center;
+}
+.edit-btn {
+    background: transparent;
+    color: #0C455E;
+    border-radius: 5px !important;
+    border-color: #0C455E;
+    padding: 5px 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+    .edit-btn:hover {
+        background: #EEEDF8;
+        color: #0000B0;
+        border-color: #0000B0;
+        -webkit-box-shadow: 0 8px 25px -8px #D6D2FB;
+        box-shadow: 0 8px 25px -8px #D6D2FB;
+    }
+
+.add-btn {
+    border-radius: 5px !important;
+    border-color: #0F6388;
+    padding: 5px 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+    .add-btn:hover {
+        -webkit-box-shadow: 0 8px 25px -8px #0168FA;
+        box-shadow: 0 8px 25px -8px #0168FA;
+    }
+table.dataTable tbody tr:hover {
+    z-index: 200;
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+}
+
+table.dataTable tbody tr {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.valid-icon {
+    color: #DC3545;
+}
+.setting-section .card {
+    margin-bottom: 1.875rem;
+    border: none;
+    box-shadow: 0 2px 18px 1px rgba(49,53,72,.1);
+    border-radius: .45rem;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+    text-align:center;
+}
+    .setting-section .card:hover {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 14px 24px rgba(62,57,107,.2);
+        z-index: 30;
+    }
+
+.setting-section .tx-width {
+    width: 45px;
+    height: 45px;
+}
+.setting-section .tx-blue {
+    color: #7367F0;
+}
+.setting-section .svg-icon {
+    background: #EAE8FD;
+    border-radius: 9999px;
+    display: inline-block;
+}
+
+.setting-section .tx-width {
+    padding: 8px;
+}
+
+.setting-section .card-body {
+    padding: 10px 5px 15px;
+}
+
+    .setting-section .card-body .card-text{
+        color: #7367F0;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+.setting-section .card-header {
+    border: 0 none;
+    padding-bottom: 0;
+}
+
+.setting-section .tx-unit {
+    color: #28C76F;
+}
+.setting-section .svg-icon-unit {
+    background: #DFF7EA;
+}
+.setting-section .card-body .unit-text {
+    color: #28C76F;
+}
+
+
+.setting-section .tx-depart, .setting-section .card-body .depart-text {
+    color: #FF9F43;
+}
+
+.setting-section .svg-icon-depart {
+    background: #FFF1E3;
+}
+
+
+.setting-section .tx-section, .setting-section .card-body .sections-text {
+    color: #EA5455;
+}
+
+.setting-section .svg-icon-section {
+    background: #FCE6E6;
+}
+.organization-info .btn-danger {
+    border-color: #DC3545;
+}
+
+.btn-import {
+    background: #0C455E !important;
+    color: #fff !important;
+}
+.navbar-menu .nav-item:hover a {
+    padding: 10px 15px;
+    background: #216C8E;
+    color: #fff;
+}
+
+.navbar-menu .nav-item a {
+    padding: 10px 15px;
+}
+.main-header .navbar-right .feather-settings {
+    color: rgba(255,255,255,0.7)
+}
+.sidebar-section ul li.nav-item a:hover {
+    background: #E1EEF5;
+    border-radius: 5px;
+}
+.main-header .navbar-right .new-indicator {
+    color: rgba(255,255,255,0.7);
+}
+.df-settings-link:hover, .df-settings-link:focus {
+    color: rgba(255,255,255,0.7);
+}
+.demo-table tbody td .custom-control-label {
+    display: inline;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
+    color:#d2d2d2;
+}
+.demo-table table tbody tr td p {
+    line-height: 25px;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+.modal-header {
+    border-bottom: 0;
+}
+
+.modal-header h6 {
+    border-bottom: 2px solid #0F6388;
+    color: #0F6388;
+    font-weight:600;
+}
+
+.modal-footer {
+    border-top: 0;
+}
+.form-group label {
+    font-weight: 600;
+}
+
+.training-table {
+    background: #F5FDFF;
+}
+.calendar-page .fc-row table {
+    border-left: 1px solid #DCDFE7;
+}
+
+.calendar-page {
+    background: #fff;
+    padding: 5px 15px;
+}
+.calendar-modal-event .modal-header h6 {
+    border-bottom: 0;
+}
+.empty-calendar .modal-header {
+    background: #F1F1F1;
+    padding: 10px 15px;
+}
+
+.empty-calendar .modal-header h5 {
+    color: #0000B0;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin-bottom: 0
+}
+
+.empty-calendar .modal-header button {
+    -webkit-transition: all .23s ease .1s;
+     transition: all .23s ease .1s;
+     padding: 8px;
+     cursor: pointer;
+     -webkit-box-shadow: 0 5px 20px 0 rgba(0,0,0,.1);
+     box-shadow: 0 5px 20px 0 rgba(0,0,0,.1);
+     border-radius: 5px;
+     background: #fff;
+     font-size: 1.25em;
+     -webkit-transform: translate(18px,-10px);
+     transform: translate(18px,-10px);
+     opacity: 1;
+     color: #0000B0;
+}
+.empty-calendar .modal-header button:hover {
+    -webkit-transform: translate(5px,5px);
+    transform: translate(5px,5px);
+    opacity: 1 !important;
+}
+
+.fc-event, .fc-event:hover {
+    color: #0C455E;
+}
+.plus-btn {
+    padding: 0.46875rem 0.9375rem;
+}
