@@ -276,11 +276,12 @@
                 <li class="nav-item"><a href="audit.html" class="nav-link"><i data-feather="box"></i>Audit & Trail</a></li>
                 <li class="nav-item"><a href="audit.html" class="nav-link"><i data-feather="layout"></i>Management</a></li>
                 <li class="nav-item"><a href="user.html" class="nav-link"><i data-feather="users"></i>User</a></li>
-                <li class="nav-item"><a href="Premise.html" class="nav-link"><i data-feather="file-text"></i>Premise</a></li>
+                <li class="nav-item"><a href="Premise.html" class="nav-link"><i data-feather="file-text"></i>Zone</a></li>
                 <li class="nav-item"><a href="camera.html" class="nav-link"><i data-feather="message-square"></i>Camera</a></li>
 
             </ul>
         </div><!-- sidebar-body -->
+        
     </div><!-- sidebar -->
 
     <div class="content content-components" id="content" style="margin-right:0px !important;">
@@ -294,16 +295,21 @@
             <ol class="breadcrumb breadcrumb-style1 mg-b-5">
                 <li class="breadcrumb-item d-flex align-items-center active" aria-current="page"><a href=""> <i data-feather="home" width="20"></i></a></li>
                 <li class="breadcrumb-item d-flex align-items-center active" aria-current="page"><a href=""><i data-feather="settings" width="20"></i></a></li>
-                <li class="breadcrumb-item d-flex align-items-center" aria-current="page">Premise</li>
+                <li class="breadcrumb-item d-flex align-items-center" aria-current="page">Zone</li>
             </ol>
         </nav>
         <div class="d-none d-md-block col-md-6 text-right">
             <a href="#" class="btn btn-dark rounded-pill" onclick="openpopup(); return false;" data-animation="effect-slide-in-right">
-                <i data-feather="plus" width="20"></i> Add Premise
+                <i data-feather="plus" width="20"></i> Add Zone
             </a>
         </div>
     </div>
+   
     <div class="df-example demo-table">
+        <div class="modal-header" style="padding: 0rem 24rem !important;">
+            <h6 class="modal-title" id="exampleModalLabel6" style="border-bottom: none;">List Of Zones</h6>
+            
+        </div>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-4" style="margin-bottom:-45px;">
@@ -314,17 +320,19 @@
         <table id="example2" class="table">
             <thead>
                 <tr>
-                    <th>Premise Title</th>
+                    <th>Premise Name</th>
 
-                  
+                    <th>Location</th>
+                    <th>Phone</th>
+                    <th>Email</th>
                     <th>
-                        Number Of Cameras
+                        No.Of Cameras
                     </th>
                     <th>
                         Status
                     </th>
                    
-                    <th class="text-center">Edit / Delete</th>
+                    <th class="text-center">Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -333,7 +341,9 @@
                         <td>
                            Camera1
                         </td>
-
+                        <td>Kochi</td>
+                        <td>9876544589</td>
+                        <td>test@gmail.com</td>
                        
                         <td> 12</td>
                         <td>Active</td>
@@ -343,9 +353,9 @@
                                 <span data-feather="edit" width="20" onclick="EditRolepopup('1'); return false;"></span>
                             </a>
                         
-                                <a href="#" onclick="deleteRole('1','Trainer')">
+                               <!--  <a href="#" onclick="deleteRole('1','Trainer')">
                                     <span data-feather="trash" width="20"></span>
-                                </a>
+                                </a> -->
 
                             
                         </td>
@@ -354,7 +364,9 @@
                         <td>
                            Camera2
                         </td>
-
+                        <td>Kochi</td>
+                        <td>9876544589</td>
+                        <td>test@gmail.com</td>
                        
                         <td> 12</td>
                         <td>InActive</td>
@@ -363,9 +375,9 @@
                                 <span data-feather="edit" width="20" onclick="EditRolepopup('1'); return false;"></span>
                             </a>
                         
-                                <a href="#" onclick="deleteRole('1','Trainer')">
+                               <!--  <a href="#" onclick="deleteRole('1','Trainer')">
                                     <span data-feather="trash" width="20"></span>
-                                </a>
+                                </a> -->
 
                             
                         </td>
@@ -374,7 +386,9 @@
                         <td>
                            Camera3
                         </td>
-
+                        <td>Kochi</td>
+                        <td>9876544589</td>
+                        <td>test@gmail.com</td>
                        
                         <td> 12</td>
                         <td>Active</td>
@@ -383,10 +397,10 @@
                                 <span data-feather="edit" width="20" onclick="EditRolepopup('1'); return false;"></span>
                             </a>
                         
-                                <a href="#" onclick="deleteRole('1','Trainer')">
+                               <!--  <a href="#" onclick="deleteRole('1','Trainer')">
                                     <span data-feather="trash" width="20"></span>
                                 </a>
-
+ -->
                             
                         </td>
                     </tr>
@@ -443,22 +457,22 @@
                         <input type="text" name="DName" id="txtRoleName" autocomplete="off" class="form-control" placeholder="Enter Role Title" required />
                     </div>
 
-                    <div class="form-group col-md-6">
-                        <label for="formGroupExampleInput" class="d-block">
-                           Status<span class="tx-danger">*</span>
-                        </label>
-                        <select class="form-control clscompcat" style="width:100%;" name="Compcat" onchange="compcat(this); return false;" required>
-                            <option value="0" selected>--Select--</option>
-
-                            <option value="0">Active</option>
-                            <option value="1">Inactive</option>
-                            
-
-
-                        </select>
-                    </div>
+                    <div class="form-group row col-md-6" style="margin-top: 26px;">
+                        <div class="col-sm-2" style="font-weight: 600;">Status<span class="tx-danger">*</span></div>
+                        <div class="col-sm-10">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" checked class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Active</label>
+                            </div>
+                        </div>
+                      </div>
+                     
+                   
                 </div>
-
+                <div class="modal-header">
+                    <h6 class="modal-title" id="exampleModalLabel6">List Of Installed Cameras</h6>
+                    
+                </div>
 
                     <div class="row col-lg-12" style="display: table !important;padding-right: 0px !important;">
                         <div class="training-table" id="TextBoxContainer1">
@@ -466,9 +480,10 @@
                             <table class="table table-bordered table-hover" id="table_Competencylevel">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
+                                        <th>Camera Name</th>
                                         <th>Process Type</th>
-                                        <th>NOs. Installed</th>
+                                        <th>Camera Type</th>
+                                       
                                        
                                         <th>
                                             <button id="btnAdd" class="btn btn-sm btn-info add_row" data-toggle="tooltip" data-placement="top" title="ADD MORE" type="button">
@@ -491,7 +506,7 @@
                                             </select>
                                         </td>
                                         <td>
-                                              <textarea name="Desc" id="txtRoledesc" autocomplete="off" class="form-control" rows="3" placeholder="Enter Description" ></textarea>
+                                              <textarea name="Desc" id="txtRoledesc" autocomplete="off" class="form-control" rows="3" placeholder="Enter Description" readonly ></textarea>
                                            
 
                                             </select>
@@ -525,9 +540,10 @@
             <div class="modal-footer">
                 <div class="row">
                     <div class="col-md-12 text-left">
-                        <button type="button" class="btn btn-secondary rounded-pill" data-dismiss="modal">Close</button>
                         <button type="submit" id="btnSubmit" class="btn btn-primary rounded-pill" onclick=" Dosubmit(); return false;">Save</button>
                         <button type="submit" id="btnSubmitUpdate" class="btn btn-primary rounded-pill" onclick=" Dosubmit_Submit(); return false;" style="display:none;">Update</button>
+                        <button type="button" class="btn btn-secondary rounded-pill" data-dismiss="modal">Close</button>
+
 
                     </div>
                 </div>
@@ -554,13 +570,16 @@
                 </select>
 
             </td>
+            
             <td>
-                <textarea name="Desc" id="txtRoledesc" autocomplete="off" class="form-control" rows="1" placeholder="Enter Description" ></textarea>
+                <textarea name="Desc" id="txtRoledesc" autocomplete="off" class="form-control" rows="1" placeholder=" Description" readonly></textarea>
 
             </td>
             <td>
-                <input type="text" name="DName" id="txtRoleName" autocomplete="off" class="form-control" placeholder="number of cameras" required />
+                <input type="text" name="DName" id="txtRoleName" autocomplete="off" class="form-control" placeholder="camera Type" readonly />
             </td>
+           
+            
            <!--  <td>
                 <img src="~/Images/alert-circle.svg" title="Has a good understanding of the service to be provided. Responsive and helpful to customers; always puts the customers’ needs first .Provides timely service " />
 

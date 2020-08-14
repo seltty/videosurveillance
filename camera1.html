@@ -33,9 +33,6 @@
         }
     </style>
     <style>
-        .modal-dialog{
-            max-width: 800px;
-        }
         .modal-dialog-slideout {
             min-height: 100%;
             margin: 0 0 0 auto;
@@ -90,20 +87,8 @@
                 <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
             </div><!-- navbar-menu-header -->
             <ul class="nav navbar-menu">
-                <!-- <li class="nav-label pd-l-20 pd-lg-l-25 d-lg-none">Main Navigation</li>
-                <li class="nav-item ">
-                    <a href="" class="nav-link"><i data-feather="pie-chart"></i> Training & Development</a>
-
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link"><i data-feather="package"></i> Skill Development</a>
-
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link"><i data-feather="layers"></i>  Personalized Learning</a>
-
-                </li>
-                <li class="nav-item"><a href="" class="nav-link"><i data-feather="archive"></i> Reports</a></li> -->
+               
+               
             </ul>
         </div><!-- nav-wrapper -->
         <div class="navbar-right">
@@ -273,20 +258,19 @@
         <div class="sidebar-body sidebar-section">
             <ul class="sidebar-nav sidebar-menu">
                 <li class="nav-label mg-b-15 learn-development">Settings & Features</li>
-                <li class="nav-item"><a href="audit.html" class="nav-link"><i data-feather="box"></i>Audit Trail</a></li>
+                <li class="nav-item"><a href="audit.html" class="nav-link"><i data-feather="box"></i>Audit & Trail</a></li>
                 <li class="nav-item"><a href="audit.html" class="nav-link"><i data-feather="layout"></i>Management</a></li>
                 <li class="nav-item"><a href="user.html" class="nav-link"><i data-feather="users"></i>User</a></li>
-                <li class="nav-item"><a href="Premise.html" class="nav-link"><i data-feather="file-text"></i>Zone</a></li>
+                <li class="nav-item"><a href="Premise.html" class="nav-link"><i data-feather="file-text"></i>Premise</a></li>
                 <li class="nav-item"><a href="camera.html" class="nav-link"><i data-feather="message-square"></i>Camera</a></li>
 
             </ul>
         </div><!-- sidebar-body -->
-        
     </div><!-- sidebar -->
 
     <div class="content content-components" id="content" style="margin-right:0px !important;">
 
-<!--          Camera Screen--------------------                            -->
+<!--           PremiseScreen--------------------                            -->
 
 <div class="">
     <div class="d-flex align-items-center breadcrumb-section">
@@ -295,21 +279,16 @@
             <ol class="breadcrumb breadcrumb-style1 mg-b-5">
                 <li class="breadcrumb-item d-flex align-items-center active" aria-current="page"><a href=""> <i data-feather="home" width="20"></i></a></li>
                 <li class="breadcrumb-item d-flex align-items-center active" aria-current="page"><a href=""><i data-feather="settings" width="20"></i></a></li>
-                <li class="breadcrumb-item d-flex align-items-center" aria-current="page">Camera</li>
+                <li class="breadcrumb-item d-flex align-items-center" aria-current="page">Roles</li>
             </ol>
         </nav>
         <div class="d-none d-md-block col-md-6 text-right">
             <a href="#" class="btn btn-dark rounded-pill" onclick="openpopup(); return false;" data-animation="effect-slide-in-right">
-                <i data-feather="plus" width="20"></i> Add camera
+                <i data-feather="plus" width="20"></i> Add Camera
             </a>
         </div>
     </div>
-   
     <div class="df-example demo-table">
-        <div class="modal-header" style="padding: 0rem 24rem !important;">
-            <h6 class="modal-title" id="exampleModalLabel6" style="border-bottom: none;">List Of Cameras</h6>
-            
-        </div>
         <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-4" style="margin-bottom:-45px;">
@@ -323,71 +302,81 @@
                                             <th>Camera Id</th>
                                             <th>Description</th>
                                             <th>Process Type</th>
-                                            <th>Camera Type</th>
-                                            <th class="text-center">Action</th>
+                                            <th>Type</th>
+                                           
+                                            <th class="text-center">Edit / Delete</th>
                 </tr>
+                
             </thead>
             <tbody>
              
                     <tr>
                         <td>
-                           Camera1
+                           Trainer
                         </td>
-                        
-                        <td>9876544589</td>
-                        <td>test@gmail.com</td>
+
                        
-                        
-                        <td>Active</td>
-                        
+                        <td> 12</td>
+                         
+                          <td> 12</td>
+                          <td> 12</td>
                         <td class="text-center">
                             <a href="#">
                                 <span data-feather="edit" width="20" onclick="EditRolepopup('1'); return false;"></span>
                             </a>
                         
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                           Camera2
-                        </td>
-                        
-                        <td>9876544589</td>
-                        <td>test@gmail.com</td>
-                        <td>InActive</td>
-                        <td class="text-center">
-                            <a href="#">
-                                <span data-feather="edit" width="20" onclick="EditRolepopup('1'); return false;"></span>
-                            </a>
-                        
-                               <!--  <a href="#" onclick="deleteRole('1','Trainer')">
+                                <a href="#" onclick="deleteRole('1','Trainer')">
                                     <span data-feather="trash" width="20"></span>
-                                </a> -->
+                                </a>
 
                             
                         </td>
                     </tr>
                     <tr>
                         <td>
-                           Camera3
+                           Trainer
                         </td>
-                    
-                        <td>9876544589</td>
-                        <td>test@gmail.com</td>
-                        <td>Active</td>
+
+                       
+                        <td> 12</td>
+                         
+                          <td> 12</td>
+                          <td> 12</td>
                         <td class="text-center">
                             <a href="#">
                                 <span data-feather="edit" width="20" onclick="EditRolepopup('1'); return false;"></span>
                             </a>
                         
-                               <!--  <a href="#" onclick="deleteRole('1','Trainer')">
+                                <a href="#" onclick="deleteRole('1','Trainer')">
                                     <span data-feather="trash" width="20"></span>
                                 </a>
- -->
+
                             
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                           Trainer
+                        </td>
+
+                       
+                        <td> 12</td>
+                         
+                          <td> 12</td>
+                          <td> 12</td>
+                        <td class="text-center">
+                            <a href="#">
+                                <span data-feather="edit" width="20" onclick="EditRolepopup('1'); return false;"></span>
+                            </a>
+                        
+                                <a href="#" onclick="deleteRole('1','Trainer')">
+                                    <span data-feather="trash" width="20"></span>
+                                </a>
+
+                            
+                        </td>
+                    </tr>
+
               
 
             </tbody>
@@ -396,7 +385,7 @@
 </div>
 <!-- Add JobRole Modal -->
 <div class="modal fade" id="AddJobRoleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-slideout" role="document">
         <div class="modal-content tx-14">
 
             <div class="modal-header">
@@ -405,19 +394,33 @@
                     <i data-feather="x"></i>
                 </button>
             </div>
+
             <div class="modal-body">
                 <form id="formAddRole" data-parsley-validate>
                     <div class="form-group">
                         <label for="formGroupExampleInput" class="d-block">
-                            Camera Name<span class="tx-danger">*</span>
+                            Camera Id<span class="tx-danger">*</span>
                         </label>
-                        <input type="text" name="DName" id="txtRoleName" autocomplete="off" class="form-control" placeholder="Enter Camera name" required />
+                        <input type="text" name="DName" id="txtRoleName" autocomplete="off" class="form-control" placeholder="Enter Role Title" required />
                     </div>
-                     <div class="form-group">
-                        <label for="formGroupExampleInput" class="d-block">Address</label>
-                        <textarea name="Desc" id="txtRoledesc" autocomplete="off" class="form-control" rows="3" placeholder="Enter Address" ></textarea>
-                    </div>
-                    <div class="form-group">
+                     
+ <div class="form-group">
+                          <label for="formGroupExampleInput" class="d-block">
+                            Description<span class="tx-danger">*</span>
+                        </label>
+                        <input type="text" name="DName" id="txtRoleName" autocomplete="off" class="form-control" placeholder="Enter Role Title" required />
+<div class="form-group">
+                        <label for="inputAddress2">Type</label>
+                        <select id="traininglocation" name="traininglocation" class="form-control">
+                          <option selected disabled>
+                              --Select--
+                          </option>
+                          <option value="1">t1</option>
+                          <option value="0">t2</option>
+                        
+                      </select>
+                      </div>
+<div class="form-group">
                         <label for="inputAddress2">Process Type</label>
                         <select id="traininglocation" name="traininglocation" class="form-control">
                           <option selected disabled>
@@ -428,13 +431,8 @@
                         
                       </select>
                       </div>
-                    
-                   
-                    
-                
-                    <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputAddress2">Camera Type</label>
+<div class="form-group">
+                        <label for="inputAddress2">Type</label>
                         <select id="traininglocation" name="traininglocation" class="form-control">
                           <option selected disabled>
                               --Select--
@@ -444,42 +442,25 @@
                         
                       </select>
                       </div>
-
-                    <div class="form-group row col-md-6" style="margin-top: 26px;">
-                        <div class="col-sm-2" style="font-weight: 600;">Status<span class="tx-danger">*</span></div>
-                        <div class="col-sm-10">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" checked class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Active</label>
-                            </div>
-                        </div>
+<div class="form-group">
+                        <label for="inputAddress2">Status</label>
+                        <select id="traininglocation" name="traininglocation" class="form-control">
+                          <option selected disabled>
+                              --Select--
+                          </option>
+                          <option value="1">Active</option>
+                          <option value="0">InActive</option>
+                        
+                      </select>
                       </div>
-                     
-                   
-                </div>
-               
-                    <div class="row col-lg-12" style="display: table !important;padding-right: 0px !important;">
-                        <div class="training-table" id="TextBoxContainer1">
-
-                            
-
-
-
-
-
-
-                            <input type="hidden" id="hdnrowno" value="2" />
-                            <input type="hidden" id="hdn_RID" value="" />
-                        </div>
-                    </div>
-                </form>
+                    </div> 
+  </form>
             </div>
             <div class="modal-footer">
                 <div class="row">
                     <div class="col-md-12 text-left">
-                        <button type="submit" id="btnSubmit" class="btn btn-primary rounded-pill" onclick=" Dosubmit(); return false;">Save</button>
                         <button type="button" class="btn btn-secondary rounded-pill" data-dismiss="modal">Close</button>
-                        
+                        <button type="submit" id="btnSubmit" class="btn btn-primary rounded-pill" onclick=" Dosubmit(); return false;">Save</button>
                         <button type="submit" id="btnSubmitUpdate" class="btn btn-primary rounded-pill" onclick=" Dosubmit_Submit(); return false;" style="display:none;">Update</button>
 
                     </div>
@@ -499,30 +480,32 @@
         <tr id="row1">
             <td>
                 <select class="form-control clscompcat" style="width:100%;" onchange="compcat(this); return false;" name="Compcat[]" required>
-                    <option value="0" selected>- Select Camera -</option>
-
-                    <option value="1">Camera1</option>
-                    <option value="1">Camera2</option>
-                    <option value="1">Camera3</option>
+                    <option value="0" selected>- Select Competency -</option>
+                    <option value="1">Category1</option>
+                    <option value="1">Category1</option>
                 </select>
 
             </td>
-            
             <td>
-                <textarea name="Desc" id="txtRoledesc" autocomplete="off" class="form-control" rows="1" placeholder=" Description" readonly></textarea>
+                <select class="form-control clscompetency" style="width:100%;" onchange="compdetail(this); return false;" name="Competency[]" required>
+                    <option value="0" selected>- Select Competency -</option>
+                  
+
+                </select>
 
             </td>
             <td>
-                <input type="text" name="DName" id="txtRoleName" autocomplete="off" class="form-control" placeholder="camera Type" readonly />
+                <select class="form-control clslevels" name="LevelId[]" style="width:100%;" onchange="compdetail(this); return false;" required>
+                    <option value="0" selected>- Select Level -</option>
+                    <option value="1">Category1</option>
+                    <option value="1">Category1</option>
+
+                </select>
             </td>
             <td>
-                <input type="text" name="DName" id="txtRoleName" autocomplete="off" class="form-control" placeholder="number of cameras" required />
-            </td>
-            
-           <!--  <td>
                 <img src="~/Images/alert-circle.svg" title="Has a good understanding of the service to be provided. Responsive and helpful to customers; always puts the customers’ needs first .Provides timely service " />
 
-            </td> -->
+            </td>
             <td>
                 <button class="btn btn-sm btn-danger" type="button" value="" onclick="removerow(this); return false;"> <i data-feather="x"></i> </button>
             </td>
